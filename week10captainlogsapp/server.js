@@ -91,7 +91,6 @@ app.put('/logs/:id', (req, res) =>{
         res.redirect(`/logs/${req.params.id}`)
     })
 })
-
 //DELETE
 
 app.delete("/logs/:id",(req, res)=>{
