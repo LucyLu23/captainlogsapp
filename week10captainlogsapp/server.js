@@ -6,7 +6,7 @@ const Log = require('./models/logs');
 const methodOverride = require('method-override');
 
 //Port number and test app
-port =3001;
+
 app.get('/',(req, res)=>{
     res.send('Welcome to CaptainLogsApp')
 })
@@ -100,7 +100,7 @@ app.delete("/logs/:id",(req, res)=>{
 });
 
 
-
-app.listen(port, ()=>{
-    console.log(`${port}----listening`)
+port1 =3001
+app.listen(port1, ()=>{
+    console.log(`${port1}----listening`)
 } )

@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+const myStyle2={
+  color: 'red',
+  fontFamily: "cursive"
+}
 
 class Show extends Component {
   render() {
@@ -6,9 +10,9 @@ class Show extends Component {
     return (
       <div>
         <h1>Show Route</h1>
-        <p>The {log.title} and {log.entry} </p>
-        <p> The {log.shipIsBroken? `It is broken` : `It is not broken`} </p>
-        <a href={"/logs"}> Log Home Page</a>
+        <p style={myStyle2}>The {log.title} and {log.entry} </p>
+        <p style={myStyle2}> The {log.shipIsBroken? `It is broken` : `It is not broken`} </p>
+        <a href={"/logs"} style={{color:'green'}}> Log Home Page</a>
 
 
       </div>

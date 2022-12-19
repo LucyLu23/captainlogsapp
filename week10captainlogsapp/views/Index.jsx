@@ -14,7 +14,7 @@ class Index extends Component {
         <ul>
             {logs.map((log)=>{
                 return (
-                    <li> the <a href={`/logs/${log.id}`}> {log.title} </a> matches {log.entry}
+                    <li style={{color:'purple', fontFamily:"cursive", background:"lightgreen"  }}> the <a href={`/logs/${log.id}`}> {log.title} </a> matches {log.entry}
                     <br />
                     {log.shipIsBroken? `It is broken`:`It is not broken`}
                     <br />

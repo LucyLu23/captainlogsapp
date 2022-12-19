@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
-
+const myStyle ={
+    color: 'green',
+    fontSize: 23
+}
  class New extends Component {
   render() {
     return (
@@ -19,7 +22,7 @@ import React, { Component } from 'react'
         </form>
         <br />
         <br />
-        <a href="/logs"> I do want to create a new log</a>
+        <a href="/logs" style ={myStyle} > I do want to create a new log</a>
         </div>
     )
   }

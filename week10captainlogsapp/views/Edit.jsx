@@ -11,9 +11,9 @@ class Edit extends Component {
         <nav>
             <a href="/logs"> Change My Mind</a>
         </nav>
-        <h1> Edit Log</h1>
+        <h1 style={{color:"pink"}}> Edit Log</h1>
         <form action={`/logs/${this.props.log.id}?_method=PUT`} method='POST'>
-            Title: <input type="text" name="title" defaultValue={log.title}/>
+            Title: <input type="text" name="title" defaultValue={log.title}  style={{background: 'lightblue', fontsize:16}}/>
             <br />
             Entry: <input type="textarea" name="entry" defaultValue={log.entry} />
             <br />
